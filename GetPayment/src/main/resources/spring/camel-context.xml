@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="        http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans.xsd        http://camel.apache.org/schema/spring       https://camel.apache.org/schema/spring/camel-spring.xsd">
+    <camelContext id="camel" xmlns="http://camel.apache.org/schema/spring">
+        <route id="api1">
+            <from id="api2" uri="undertow:http://0.0.0.0:8180/getpayment"/>
+            <setBody id="_setBody2">
+                <constant>"GetPaymnet  MicroServices : {{env:HOSTNAME}}"</constant>
+            </setBody>
+            <log id="log2" message=">>> hello GetPaymnet"/>
+        </route>
+    </camelContext>
+</beans>

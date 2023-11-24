@@ -1,4 +1,4 @@
-FROM registry.redhat.io/redhat-openjdk-18/openjdk18-openshift
+FROM image-registry.openshift-image-registry.svc:5000/openshift/redhat-openjdk18-openshift
 
 
 COPY target/getopt-1.0.0.jar /home/jboss/test.jar

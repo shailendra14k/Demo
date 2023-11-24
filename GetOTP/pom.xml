@@ -55,7 +55,7 @@
   </dependencies>
   <distributionManagement>
 		<repository>
-				<id>nexus/id>
+				<id>nexus</id>
 				<name>Releases</name>
 				<url>http://sonatype-nexus-service:8081/repository/maven-releases</url>
 		</repository>

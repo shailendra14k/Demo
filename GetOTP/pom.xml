@@ -53,6 +53,18 @@
       <version>2.23.2.fuse-780036-redhat-00001</version>
     </dependency>
   </dependencies>
+  <distributionManagement>
+		<repository>
+				<id>nexus-releases</id>
+				<name>Releases</name>
+				<url>http://sonatype-nexus-service:8081/repository/maven-releases</url>
+		</repository>
+		<snapshotRepository>
+				<id>nexus-snapshot</id>
+				<name>Snapshot</name>
+				<url>http://sonatype-nexus-service:8081/repository/maven-snapshots</url>
+		</snapshotRepository>
+	</distributionManagement>
   <repositories>
     <repository>
       <id>red-hat-ga-repository</id>

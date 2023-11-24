@@ -125,6 +125,8 @@
             <goals>
               <goal>resource</goal>
               <goal>build</goal>
+		    <goal>install</goal>
+		    <goal>deploy</goal>
             </goals>
           </execution>
         </executions>

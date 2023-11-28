@@ -5,7 +5,7 @@
         <route id="api2">
             <from id="api2" uri="undertow:http://0.0.0.0:8180/getotp"/>
             <setBody id="_setBody2">
-                <constant>"GetOTP  apps-of-apps: {{env:HOSTNAME}}"</constant>
+                <constant>"GetOTP  apps-of-aaps demo: {{env:HOSTNAME}}"</constant>
             </setBody>
             <log id="log2" message=">>> hello GetOTP"/>
         </route>
